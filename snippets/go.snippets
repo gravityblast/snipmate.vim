@@ -1,0 +1,67 @@
+snippet pk
+	package ${1:main}
+	${2}
+snippet im
+	import (
+		"${1}"
+	)
+snippet main
+	func main() {
+		${1}
+	}
+snippet if
+	if ${1:/* condition */} {
+		${2:/* code */}
+	}
+snippet el
+	else ${1:/* condition */} {
+		${2:/* code */}
+	}
+snippet eli
+	else if ${1:/* condition */} {
+		${2:/* code */}
+	}
+snippet st
+	type ${1:MyType} struct {
+		${3}
+	}
+snippet in
+	type ${1:MyType} interface {
+		${3}
+	}
+snippet fmt
+	fmt.Printf("${1:%v}", ${2:args})
+snippet fun
+	func ${1:MyFunc}(${2:args}) ${3}{
+		${4}
+	}
+snippet met
+	func (${1:struct} ${2:*MyStruct}) ${3:MyMethod}(${4:args}) ${5}{
+		${6}
+	}
+snippet for C: for i := 0; i < count; i++ {}
+	for ${1:i} = 0; $1 < ${2:count}; $1${3:++} {
+		${4:/* code */}
+	}
+snippet for While: for true {}
+	for ${1:condition} {
+		${2}
+	}
+snippet for Key Value: for k, v := range map {}
+	for ${1:key}, ${2:value} := range ${3:iterator} {
+		${4:}
+	}
+snippet for Key: for k := range map {}
+	for ${1:key}, ${2:value} := range ${3:iterator} {
+		${4:}
+	}
+snippet def
+	defer func(){
+		${1}
+	}()
+snippet rec
+	if err := recover(); err != nil {
+		${1}
+	}
+snippet git
+	github.com/${1:user}/${2:project}
