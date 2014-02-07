@@ -23,14 +23,14 @@ snippet eli
 	}
 snippet st
 	type ${1:MyType} struct {
-		${3}
+		${2}
 	}
 snippet in
 	type ${1:MyType} interface {
-		${3}
+		${2}
 	}
 snippet fmt
-	fmt.Printf("${1:%v}", ${2:args})
+	fmt.Printf("${1:%v}\n", ${2:args})
 snippet fun
 	func ${1:MyFunc}(${2:args}) ${3}{
 		${4}
@@ -65,3 +65,7 @@ snippet rec
 	}
 snippet git
 	github.com/${1:user}/${2:project}
+snippet hand
+	func ${1:Handler}(w traffic.ResponseWriter, r *traffic.Request) {
+		${2}
+	}
