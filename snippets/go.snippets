@@ -66,6 +66,10 @@ snippet rec
 snippet git
 	github.com/${1:user}/${2:project}
 snippet hand
+	func ${1:Handler}(w http.ResponseWriter, r *http.Request) {
+		${2}
+	}
+snippet thand
 	func ${1:Handler}(w traffic.ResponseWriter, r *traffic.Request) {
 		${2}
 	}
