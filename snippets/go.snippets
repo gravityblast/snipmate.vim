@@ -80,3 +80,10 @@ snippet test
 	func Test${1:MyFunc}(t *testing.T) {
 		${2}
 	}
+
+snippet bench
+	func Benchmark${1:MyFunc}(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			${2}
+		}
+	}
