@@ -1,0 +1,23 @@
+snippet defm
+	defmodule ${1:Module} do
+		${2}
+	end
+snippet def
+	def ${1:function} do
+		${2}
+	end
+snippet defp
+	defp ${1:function} do
+		${2}
+	end
+snippet fn
+	fn ${1:args} -> ${2} end
+snippet req
+	require ${1:module_name}
+snippet test
+	test "${1:test_name}" do
+		${2}
+	end
+snippet pry
+	require IEx; IEx.pry
+	${0}
