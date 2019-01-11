@@ -30,7 +30,7 @@ snippet in
 		${2}
 	}
 snippet fmt
-	fmt.Printf("${1:%+v}\n", ${2:args})
+	fmt.Printf("${1} ${2:%+v}\n", ${3:args})
 snippet log
 	log.Printf("${1:%v}\n", ${2:args})
 snippet fun
