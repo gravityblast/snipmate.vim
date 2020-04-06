@@ -61,6 +61,10 @@ snippet def
 	defer func(){
 		${1}
 	}()
+snippet err
+	if err != nil {
+		log.Fatal(${1})
+	}
 snippet rec
 	if err := recover(); err != nil {
 		${1}
